@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="uft-8">
+        <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+        <title>SHUT THE BOX</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="./style.css">
+        <script src = "./game.js" defer></script>
+    </head>
+    <body>
+        <h1>Shut the Box</h1>
+        <div class= "playerNames" id = "names">
+            <input type = "text" placeholder = "Player 1" id = "user1-input" autofocus autocomplete = "off">
+            <input type = "text" placeholder = "Player 2" id = "user2-input" autofocus autocomplete = "off">
+            <button id = "start-btn">Start Game ^-^</button>
+        </div>
+
+        <div class = "board" id = "game">
+            <div class = "turnInfo">
+            <h2>Round 1</h2>
+            <h2 id = "vs">X vs X</h2>
+            <h2 id = "turn">Player 1</h2>
+            </div>
+            <div class = "numbers">
+            <i class="bi bi-1-square" id = "box1"></i>
+            <i class="bi bi-2-square" id = "box2"></i>
+            <i class="bi bi-3-square" id = "box3"></i>
+            <i class="bi bi-4-square" id = "box4"></i>
+            <i class="bi bi-5-square" id = "box5"></i>
+            <i class="bi bi-6-square" id = "box6"></i>
+            <i class="bi bi-7-square" id = "box7"></i>
+            <i class="bi bi-8-square" id = "box8"></i>
+            <i class="bi bi-9-square" id = "box9"></i>
+            </div>
+        </div>
+        <div class = "dice" id = "dice">
+            <i id="first-dice" class="bi bi-dice-1"></i>
+            <i id="second-dice" class="bi bi-dice-1"></i>
+        </div>
+        <div class = "dice-grid" id = "buttons">
+            <button id = "roll-btn">Roll</button>
+            <button id = "individual-btn">Individual Dice</button>
+            <button id = "sum-btn">Sum of the Dice</button>
+            <button id = "end-btn">End Your Turn</button>
+        </div>
+
+        <div class = "scorecard" id = "scorecard">
+            <table id = "table">
+                <thead>
+                    <tr>
+                        <th id = "round">Round</th>
+                        <th id ="p1name">Player1</th>
+                        <th id = "p2name">Player2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- this will be our score card -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class = "results" id = "result">
+            <h2 id = "winner">Winner: </h2>
+            <h3 id = "loser">Loser: </h3>
+            <button id = "reset-btn">Ready for a rematch? :D</button>
+        </div>
+
+    </body>
+</html>
